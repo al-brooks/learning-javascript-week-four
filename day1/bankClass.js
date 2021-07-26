@@ -7,11 +7,11 @@ class BankAccount {
     this.middleName = null;
     this.accountType = accountType;
     this.balance = balance;
-    this.status = 'Opened';
+    this.status = null;
   }
 
   open() {
-    if (this.balance > 35) {
+    if (this.balance > 100) {
       this.status = 'Opened';
     } else {
       return 'Insufficient Funds for Opening Account';
