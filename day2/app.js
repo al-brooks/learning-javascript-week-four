@@ -13,17 +13,21 @@ submitTask.addEventListener('click', function () {
 
     // create li element
     const taskLi = document.createElement('li');
+    taskLi.setAttribute('class', 'listBox');
 
     // create task checkbox
     const taskCheck = document.createElement('input');
     taskCheck.setAttribute('type', 'checkbox');
+    taskCheck.setAttribute('class', 'checkBox');
 
     // create task span - header
     const taskTitle = document.createElement('span');
+    taskTitle.setAttribute('class', 'taskTitle');
     taskTitle.innerHTML = task;
 
     // create remove button
     const rmButton = document.createElement('button');
+    rmButton.setAttribute('class', 'removeButton');
     rmButton.innerHTML = 'Remove';
 
     // Add input, span and button to Li
@@ -51,5 +55,7 @@ submitTask.addEventListener('click', function () {
         pendingTasks.appendChild(this.parentElement);
       }
     });
+
+    // Dragging List Items: Enter Code Below
   }
 });
