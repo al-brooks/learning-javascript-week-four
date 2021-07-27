@@ -26,4 +26,22 @@ function isPalindrome(word) {
   }
 }
 
-console.log(isPalindrome('car'));
+// Method 2 from class discussion - alot better
+
+let reversedWord = '';
+
+function isPalindrome2(word) {
+  for (let i = word.length - 1; i > -1; i--) {
+    reversedWord += [word[i]];
+  }
+  // console.log(reversedWord);
+  // console.log(word);
+
+  if (reversedWord.toLowerCase() === word.toLowerCase()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isPalindrome2('Civic'));
