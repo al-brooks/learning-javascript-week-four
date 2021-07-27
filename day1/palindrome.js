@@ -28,9 +28,9 @@ function isPalindrome(word) {
 
 // Method 2 from class discussion - alot better
 
-let reversedWord = '';
-
 function isPalindrome2(word) {
+  let reversedWord = '';
+
   for (let i = word.length - 1; i > -1; i--) {
     reversedWord += [word[i]];
   }
@@ -44,4 +44,4 @@ function isPalindrome2(word) {
   }
 }
 
-console.log(isPalindrome2('Civic'));
+console.log(isPalindrome2('dog'));
