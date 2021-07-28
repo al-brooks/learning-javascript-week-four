@@ -8,8 +8,9 @@ body {
 }
 
 #mainHeader {
-  width: 90%;
-  padding: 10px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 0px;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -84,4 +85,14 @@ body {
   align-self: flex-start;
   margin: 10px;
   font-weight: bold;
+}
+
+@media (min-width: 667px) {
+  #menuNav {
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  #dishBlockList {
+    width: 75%;
+  }
 }

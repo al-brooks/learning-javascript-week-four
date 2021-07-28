@@ -22,13 +22,16 @@ const dishBlockList = document.getElementById('dishBlockList');
 const courseSelect = document.getElementById('courseSelect');
 const courseTitle = document.getElementById('courseTitle');
 
+// Original Menu listed at site refresh
+createList(dishes);
+
 // Adding listener event for drop down menu selection
 courseSelect.addEventListener('change', function () {
   const selectedCourse = courseSelect.value;
   // console.log(selectedCourse); // check is event works
 
   // if user selects view all, there is no filtered list
-  if (selectedCourse === 'view-all') {
+  if (selectedCourse === '') {
     createList(dishes);
   } else {
     // else if they choose an option, filter the menu
@@ -38,10 +41,8 @@ courseSelect.addEventListener('change', function () {
     createList(filteredDishList);
   }
 
-  if (selectedCourse === 'view-all') {
-    courseTitle.innerHTML = `Here's Our Full Menu!`;
-  } else if (selectedCourse === '') {
-    courseTitle.innerHTML = `Select A Course And View Our Menu Below!`;
+  if (selectedCourse === '') {
+    courseTitle.innerHTML = `Here's our full menu!`;
   } else {
     courseTitle.innerHTML = selectedCourse;
   }
