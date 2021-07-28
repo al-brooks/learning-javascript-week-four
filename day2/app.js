@@ -39,12 +39,15 @@ submitTask.addEventListener('click', function () {
 
     // remove button logic:
     rmButton.addEventListener('click', function () {
-      const parent = this.parentElement.parentElement;
-      if (parent.id === 'pendingTasks') {
-        pendingTasks.removeChild(this.parentElement);
-      } else {
-        completedTasks.removeChild(this.parentElement);
-      }
+      // const parent = this.parentElement.parentElement;
+      // if (parent.id === 'pendingTasks') {
+      //   pendingTasks.removeChild(this.parentElement);
+      // } else {
+      //   completedTasks.removeChild(this.parentElement);
+      // }
+
+      // another solution
+      this.parentElement.remove();
     });
 
     //   Move between completed and pending
