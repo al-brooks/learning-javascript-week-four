@@ -19,35 +19,69 @@ body {
 
 #menuNav {
   border-bottom: 2px solid black;
-  margin-bottom: 50px;
+  width: 100%;
+  height: 70px;
+  margin: 25px 0px 50px;
   border: 1px solid black;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #courseTitle {
   border: 5px solid red;
+  font-size: 0.8em;
 }
 
 #selectLabel {
   border: 5px solid blue;
+  font-size: 0.6em;
+  text-align: center;
+  padding-top: 15px;
 }
 
 #courseSelect {
   border: 5px solid green;
+  width: 150px;
 }
 
 #dishBlockList {
-  width: 500px;
+  width: 100%;
   border: 5px solid orange;
 }
 
 .dishBlocks {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 20px;
+  border: 2px solid black;
 }
 
 .dishImages {
-  height: 100px;
+  width: 40%;
+}
+
+.dishSummary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dishTitles {
+  margin: 20px 10px 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.dishDetails {
+  margin: 10px 10px 20px;
+}
+
+.dishPrices {
+  align-self: flex-start;
+  margin: 10px;
+  font-weight: bold;
 }

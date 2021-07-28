@@ -5,7 +5,7 @@ function createList(dishList) {
             <article class="dishBlocks">
                 <img src="${dish.imageURL}" class="dishImages"/>
                 <summary class="dishSummary">
-                    <h5 class="dishTitles">${dish.title}</h5>
+                    <span class="dishTitles">${dish.title}</span>
                     <span class="dishDetails">${dish.description}</span>
                 </summary>
                 <span class="dishPrices">${dish.price}</span>
@@ -40,6 +40,8 @@ courseSelect.addEventListener('change', function () {
 
   if (selectedCourse === 'view-all') {
     courseTitle.innerHTML = `Here's Our Full Menu!`;
+  } else if (selectedCourse === '') {
+    courseTitle.innerHTML = `Select A Course And View Our Menu Below!`;
   } else {
     courseTitle.innerHTML = selectedCourse;
   }
