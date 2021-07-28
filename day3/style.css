@@ -1,0 +1,53 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7ede2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainHeader {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuNav {
+  border-bottom: 2px solid black;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+#courseTitle {
+  border: 5px solid red;
+}
+
+#selectLabel {
+  border: 5px solid blue;
+}
+
+#courseSelect {
+  border: 5px solid green;
+}
+
+#dishBlockList {
+  width: 500px;
+  border: 5px solid orange;
+}
+
+.dishBlocks {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.dishImages {
+  height: 100px;
+}

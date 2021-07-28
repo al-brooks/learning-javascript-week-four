@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restaurant Menu</title>
+  </head>
+  <body>
+    <header id="mainHeader">
+      <h1 id="mainTitle">This is our Menu</h1>
+      <summary id="mainSummary">
+        Our menu is: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Laboriosam sint magnam cum, necessitatibus ipsa ex maxime, voluptas eum
+        amet quam voluptatem dicta unde atque, nemo placeat facere? Nulla,
+        consequatur. Rem!
+      </summary>
+    </header>
+    <nav id="menuNav">
+      <h2 id="courseTitle">Select A Course And View Our Menu Below!</h2>
+      <label for="courseSelect" id="selectLabel"
+        >Please Choose An Option:</label
+      >
+      <select name="courses" id="courseSelect">
+        <option value="">--Select A Course--</option>
+        <option value="Starters">Starters</option>
+        <option value="Entrees">Entrees</option>
+        <option value="Desserts">Desserts</option>
+        <option value="view-all">View-All</option>
+      </select>
+    </nav>
+    <main id="dishBlockList"></main>
+
+    <script src="dishes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
