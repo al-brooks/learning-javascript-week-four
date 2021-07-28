@@ -49,9 +49,9 @@ submitTask.addEventListener('click', function () {
 
     //   Move between completed and pending
     taskCheck.addEventListener('change', function () {
-      if (taskCheck.checked === true) {
+      if (taskCheck.checked) {
         completedTasks.appendChild(this.parentElement);
-      } else if (taskCheck.checked === false) {
+      } else {
         pendingTasks.appendChild(this.parentElement);
       }
     });
