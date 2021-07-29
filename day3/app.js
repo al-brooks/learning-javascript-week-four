@@ -2,14 +2,14 @@
 function createList(dishList) {
   const dishBlocks = dishList.map((dish) => {
     const dishBlock = `
-            <article class="dishBlocks">
-                <img src="${dish.imageURL}" class="dishImages"/>
-                <summary class="dishSummary">
-                    <span class="dishTitles">${dish.title}</span>
-                    <span class="dishDetails">${dish.description}</span>
-                </summary>
-                <span class="dishPrices">${dish.price}</span>
-            </article>
+      <article class="dishBlocks">
+          <img src="${dish.imageURL}" class="dishImages"/>
+          <summary class="dishSummary">
+              <span class="dishTitles">${dish.title}</span>
+              <span class="dishDetails">${dish.description}</span>
+          </summary>
+          <span class="dishPrices">${dish.price}</span>
+      </article>
             `;
 
     return dishBlock;
