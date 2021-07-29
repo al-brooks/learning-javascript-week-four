@@ -17,24 +17,24 @@ function createList(dishList) {
   dishBlockList.innerHTML = dishBlocks.join('');
 }
 
-// Creating variables for menu section
+// variables for menu section
 const dishBlockList = document.getElementById('dishBlockList');
 const courseSelect = document.getElementById('courseSelect');
 const courseTitle = document.getElementById('courseTitle');
 
-// Original Menu listed at site refresh
+// display full menu when page loads
 createList(dishes);
 
-// Adding listener event for drop down menu selection
+// dropdown menu event listener
 courseSelect.addEventListener('change', function () {
   const selectedCourse = courseSelect.value;
-  // console.log(selectedCourse); // check is event works
+  // console.log(selectedCourse); // check if listener works
 
-  // if user selects view all, there is no filtered list
+  // if user selects no course, we need to display full menu again
   if (selectedCourse === '') {
     createList(dishes);
   } else {
-    // else if they choose an option, filter the menu
+    // Otherwise, we filter the menu
     const filteredDishList = dishes.filter(
       (dish) => dish.course === selectedCourse
     );
