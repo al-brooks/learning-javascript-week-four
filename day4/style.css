@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  border: 3px solid black;
+}
+
+#siteNav {
+  border: 3px solid green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#articleSection {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.article {
+  border: 3px solid green;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.articleContent {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.articleSummary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.articleImage {
+  width: 300px;
+}
+
+.articlePublished {
+  border: 2px solid orange;
+  height: 10%;
+}
