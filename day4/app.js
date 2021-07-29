@@ -20,14 +20,16 @@ function listNews(articleArray) {
   articleSection.innerHTML = articlesList.join('');
 }
 
-// declaring vars for HTML content
+// declaring vars for HTML content insertions
+// news source drop down menu
 const pickSource = document.getElementById('pickSource');
+// news articles
 const articleSection = document.getElementById('articleSection');
 
-// creating array for news articles
+// creating array for news articles from news.js
 const newsArray = news.articles;
 
-// create HTML drop down items - based on sources js file
+// create HTML drop down items - based on sources.js
 const sourceArray = sources.sources;
 const newsSources = sourceArray.map((source) => {
   const newsSource = `
